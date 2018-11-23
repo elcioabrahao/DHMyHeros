@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Meus Heróis</string>
+    <string name="action_settings">Configurações</string>
+    <string name="menu_search">Busca</string>
+    <string name="menu_messages">Mensagem</string>
+    <string name="menu_heroes">Heróis</string>
+    <string name="menu_reservations">Reservas</string>
+    <string name="menu_options">Menu</string>
+    <string name="label_money">R$</string>
+
+    <string name="msg_my_heroes_empty">Empity</string>
+    <string name="title_heroes_recents">Heróis com quem me hospedei</string>
+    <string name="title_heroes_favorites">Heróis Favoritos</string>
+
+    <string name="msg_reservation">Reservar de novo</string>
+    <string name="msg_contact">Contato</string>
+    <string name="msg_per_night">por noite</string>
+    <string name="msg_super_hero">Este usuário é um super heroi</string>
+    <string name="msg_loading_heroes">Carregando heróis...</string>
+    <string name="msg_error_network">Esta operação não pode ser completada agora. Verifique sua conexão com a internet e tente novamente!</string>
+    <string name="msg_error">Esta operação não pode ser completada agora.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Alô Frangment Vazia!</string>
+
+    <string name="about">Sobre o Autor</string>
+    <string name="about_title_text">Elcio Abrahão, Nov/2018, DogHero</string>
+    <string name="about_title_message">Este app é um teste de emprego para DogHero</string>
+    <string name="about_cancel">Cancelar</string>
+    <string name="about_ok">Ok</string>
+
+</resources>

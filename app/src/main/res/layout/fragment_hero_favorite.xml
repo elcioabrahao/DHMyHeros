@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="@dimen/small_space">
+
+    <ImageView
+        android:id="@+id/imageViewUser"
+        android:layout_width="@dimen/image_space"
+        android:layout_height="@dimen/image_space"
+        tools:src="@tools:sample/avatars"
+        android:src="@drawable/ic_person"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        style="@style/TextView.Name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewName"
+        android:layout_marginLeft="@dimen/medium_space"
+        app:layout_constraintTop_toTopOf="@+id/likeButtonView"
+        app:layout_constraintStart_toEndOf="@+id/imageViewUser"
+        tools:text="Alex"
+        app:layout_constraintEnd_toStartOf="@+id/textViewPrice"/>
+
+    <TextView
+        style="@style/TextView.Neighborhood"
+        tools:text="Paraiso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewNeighborhood"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName"
+        app:layout_constraintStart_toStartOf="@+id/textViewName"
+        app:layout_constraintEnd_toStartOf="@+id/textViewPerNight"/>
+
+    <RatingBar
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNeighborhood"
+        android:rating="5"
+        android:numStars="5"
+        android:layout_marginTop="@dimen/space_between_buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewNeighborhood"/>
+
+
+    <br.com.doghero.dhmyheros.ui.customviews.LikeButtonView
+        android:layout_width="@dimen/image_super_hero_space"
+        android:layout_height="@dimen/image_super_hero_space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/likeButtonView"/>
+
+    <TextView
+        style="@style/TextView.Price"
+        tools:text="R$ 180"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/likeButtonView"/>
+
+    <TextView
+        style="@style/TextView.PerNight"
+        android:text="@string/msg_per_night"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPerNight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPrice"/>
+
+    <Button
+        style="@style/Button.Primary"
+        android:text="@string/msg_contact"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonContact"
+        android:layout_marginTop="@dimen/medium_space"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginRight="@dimen/space_between_buttons"
+        android:contentDescription="@string/msg_contact"
+        app:layout_constraintEnd_toStartOf="@+id/buttonReservation"/>
+    <Button
+        android:id="@+id/buttonReservation"
+        style="@style/Button.Secondary"
+        android:text="@string/msg_reservation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_between_buttons"
+        android:background="@drawable/button_secondary"
+        app:layout_constraintStart_toEndOf="@+id/buttonContact"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/msg_reservation"
+        app:layout_constraintTop_toTopOf="@+id/buttonContact"/>
+
+    <ImageView
+        android:layout_width="@dimen/image_super_hero_space"
+        android:layout_height="@dimen/image_super_hero_space"
+        app:srcCompat="@drawable/host_list_icon_badge"
+        android:contentDescription="@string/msg_per_night"
+        android:id="@+id/imageViewSuperHero"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline2"
+        app:layout_constraintGuide_begin="45dp"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline4"
+        app:layout_constraintGuide_begin="45dp"
+        android:orientation="vertical"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

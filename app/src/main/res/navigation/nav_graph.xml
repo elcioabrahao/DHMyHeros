@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph" app:startDestination="@id/fragmentMyHeroes">
+	
+	<fragment android:id="@+id/fragmentReservations"
+	          android:name="br.com.doghero.dhmyheros.ui.fragments.ReservationsFragment"
+	          android:label="@string/menu_reservations"
+	tools:layout="@layout/fragment_reservation">
+	</fragment>
+	
+	<fragment android:id="@+id/fragmentMessages"
+        android:name="br.com.doghero.dhmyheros.ui.fragments.MessagesFragment"
+	          android:label="@string/menu_messages"
+	          tools:layout="@layout/fragment_messages">
+	</fragment>
+	
+	<fragment android:id="@+id/fragmentOptions"
+        android:name="br.com.doghero.dhmyheros.ui.fragments.OptionsFragment"
+	          android:label="@string/menu_options"
+	          tools:layout="@layout/fragment_options">
+	</fragment>
+	
+	<fragment android:id="@+id/fragmentSearch"
+        android:name="br.com.doghero.dhmyheros.ui.fragments.SearchFragment"
+	          android:label="@string/menu_search"
+	          tools:layout="@layout/fragment_search">
+
+	</fragment>
+	
+	<fragment android:id="@+id/fragmentMyHeroes"
+        android:name="br.com.doghero.dhmyheros.ui.fragments.HeroFragment"
+	          android:label="@string/menu_heroes"
+	          tools:layout="@layout/fragment_myheroes">
+
+	</fragment>
+	
+	
+</navigation>
